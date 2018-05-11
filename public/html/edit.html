@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title id="title">Note ME</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.jpg" />
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgrey;
+            color: darkgoldenrod;
+            text-align: center;
+        }
+        
+        textarea {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid" id="header">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="/" id="rootadd">Note ME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id='delete' onMouseOver="this.style.cursor='pointer'" href="/"><span class="glyphicon glyphicon-trash"></span> Delete Note</a></li>
+                    <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li id='admin'></li>
+                    <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id='main-content'>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container-fluid">
+            <div class="row">
+                <div id="title-hold" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 50;" class="form-control input-grou">
+                    <textarea id='title-val' rows="1" style="color: black; width: 80%;" placeholder="Title"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div id="content-hold" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 50;" class="form-control input-grou">
+                    <textarea id='content' rows="15" style="color: black; width: 80%;" placeholder="Content"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div id="save-hold" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 50;padding-top: 300">
+                    <input class="btn btn-default" type="button" value="Save" id='save'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="footer"></div>
+</body>
+<script src="js/edit.js"></script>
+<div class="footer">KNN ♥</div>
+
+</html>

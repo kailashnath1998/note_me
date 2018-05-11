@@ -1,0 +1,29 @@
+{
+  "name": "note_me",
+  "version": "1.0.0",
+  "description": "note app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "note",
+    "javascript",
+    "mongoDB"
+  ],
+  "author": "knn",
+  "license": "MIT",
+  "dependencies": {
+    "JSON": "^1.0.0",
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "form-data": "^2.3.2",
+    "json-parser": "^1.1.5",
+    "mongoose": "^5.0.17",
+    "nodemailer": "^4.6.4",
+    "querystring": "^0.2.0",
+    "set-cookie": "0.0.4"
+  }
+}
