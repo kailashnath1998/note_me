@@ -1,2 +1,3 @@
 # note_me
-note-taking app
+note-taking app built on MEAN stack
+ 
